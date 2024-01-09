@@ -113,7 +113,15 @@ new Task("build", remove(["dist", "out"]))
 					target: ["portable", "zip"],
 				},
 				mac: {
-					target: ["dmg"],
+					target: [
+						{
+							target: "dmg",
+							arch: ["universal"],
+						},
+						{
+							target: "zip",
+							arch: ["universal"],
+						}],
 				},
 				linux: {
 					target: ["AppImage", "zip"],
