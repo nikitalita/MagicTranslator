@@ -57,5 +57,5 @@ jobs:
         with:
           name: MagicTranslator-${{ steps.build.outputs.version }}-macos
           path: |
-              dist/MagicTranslator-${{ steps.build.outputs.version }}.dmg
+            dist/MagicTranslator-${{ steps.build.outputs.version }}-universal-mac.zip
           
